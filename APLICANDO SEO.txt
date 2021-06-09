@@ -1,0 +1,6 @@
+
+Aplicando "keywords" y "description".
+
+
+<meta name="keywords" content="rock, otra mala idea, banda, trio, power trio, rock garage, rock barrial, rock nacional">
+<meta name="description" content="Banda de rock power trio garage, una mezcla de rock crudo, pesado y moderno con un rock clásico y barrial.">

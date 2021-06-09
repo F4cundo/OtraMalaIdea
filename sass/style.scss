@@ -1,0 +1,435 @@
+header.header {
+	background-image: url("../img/logo 1.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	position: fixed;
+	z-index: 1050;
+	width: 100%;
+	nav {
+		padding: 0;
+		.navbar-toggler {
+			border-color: antiquewhite;
+			padding: .75rem;
+			i {
+				color: antiquewhite;
+			}
+			.navbar-toggler-icon {
+				background-image: url("../img/menu-icon.svg");
+			}
+		}
+		.navbar-brand {
+			width: 100px;
+			height: 100px;
+			-webkit-transition: 1.5s ease;
+			transition: 1.5s ease;
+			&:hover {
+				-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
+			}
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		#navbarNav {
+			justify-content: flex-end;
+			ul.navbar-nav {
+				li {
+					padding: 25px 15px;
+					a {
+						font-family: 'Chelsea Market', cursive;
+						color: antiquewhite;
+						font-size: 2rem;
+						transition: all 0.4s ease;
+						-webkit-transition: 1s linear;
+						transition: 1s linear;
+						&:hover {
+							color: rgb(167, 23, 23);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+main{
+	min-height: 80vh; 
+	background-image: url("../img/metal.jpg");
+	background-attachment: fixed;
+	background-size: 100%;
+	padding-top: 115px;
+	@media (max-width: 1200.98px){
+	  padding-top: 100px;
+	}
+	h2{
+	  font-family:'Chelsea Market', cursive;
+	  text-align: center;
+	  font-size: 3rem;
+	  color: antiquewhite;
+	}
+	p{
+	  font-family:'Chelsea Market', cursive;
+	  color: antiquewhite;
+	}
+}
+#carouselExampleIndicators {
+	position: relative;
+	margin-bottom: 30px;
+	overflow: hidden;
+  }
+ .sobre-nosotros{
+	padding-top: 115px;
+	h2{
+	  padding-bottom: 20px;
+	}
+	p{
+		  text-align: center;
+	}
+}
+.integrantes {
+	padding-top: 115px;
+  
+	.container {
+	  border-top: 2px solid antiquewhite;
+	}
+  
+	h2 {
+	  padding: 50px 0 20px;
+	}
+  
+	.miembros {
+	  display: flex;
+	  flex-direction: column;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
+  
+	  .integrante {
+		align-items: center;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+		margin-bottom: 30px;
+  
+		.nombre {
+		  padding: 30px 30px 30px 0;
+		  color: antiquewhite;
+		  font-family: 'Chelsea Market', cursive;
+		  font-size: 1.5rem;
+		  letter-spacing: 1mm;
+		}
+  
+		&.reverse {
+		  flex-direction: row-reverse;
+  
+		  .nombre {
+			padding: 30px 0 30px 30px;
+		  }
+		}
+  
+		.imagen-miembro {
+		  border-radius: 150px;
+		  border: solid 2px antiquewhite;
+		  flex: 0 0 300px;
+		  height: 300px;
+		  overflow: hidden;
+		  position: relative;
+		  width: 300px;
+		  -webkit-transition: 1.5s ease;
+		  transition: 1.5 ease;
+  
+		  /* animation-iteration-count: infinite; */
+  
+		  &:hover {
+			-webkit-transform: rotate(360deg);
+			transform: rotate(360deg);
+		  }
+  
+		  img {
+			height: 100%;
+			left: 0;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		  }
+		}
+	  }
+	}
+  }
+
+  
+@media (max-width: 1200px) {
+	.integrantes .miembros .integrante {
+		flex-wrap: wrap;
+	}
+	}
+
+	@media (max-width: 1200px) {
+	.integrantes .miembros .integrante .nombre {
+		text-align: center;
+	}
+}
+
+.galeria{
+	padding-top: 115px;
+	.container{
+	  border-top: 2px solid antiquewhite;
+	}
+	.margin-top-50{
+	  margin-top: 50px;
+	}
+	h2{
+	  padding: 50px 0 20px;
+	}
+	.grid{
+	  display: grid;
+	  grid-template-columns: repeat(3,1fr);
+	  gap: 15px;
+	  .columna{
+		.imagen{
+		  width: 100%;
+		  overflow: hidden;
+		  img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		  }
+		}
+	  }
+	  .columna-1, .columna-2{
+		display: grid;
+		grid-template-rows: repeat(2, 1fr);
+		gap: 15px;
+	  }
+	  .columna-3{
+		.imagen{
+		  height: 100%;
+		}
+	  }
+	}
+}
+.noticias {
+	padding-top: 115px;
+	padding-bottom: 100px;
+  
+	.container {
+	  border-top: 2px solid antiquewhite;
+	}
+  
+	.margin-top-50 {
+	  margin-top: 50px;
+	}
+  
+	h2 {
+	  padding: 50px 0 20px;
+	}
+}
+/* FORMULARIO DE CONTACTO */
+
+.formulario {
+	margin: 0 auto;
+	margin-bottom: 50px;
+  }
+  
+  #contacto {
+	h2 {
+	  font-family: 'Chelsea Market', cursive;
+	  font-size: 3rem;
+	  margin: 70px;
+	}
+  
+	.container .formulario {
+	  display: flex;
+	  flex-direction: column;
+	  flex-wrap: nowrap;
+	}
+}
+ 
+/* ESTILO SACADO DE: https://codepen.io/paulocesarpcfj/pen/XbQGmp */
+
+*:focus {
+	outline: none;
+  }
+  
+  .inputGroup {
+	position: relative;
+	margin-bottom: 30px;
+  
+	label {
+	  position: absolute;
+	  top: 0;
+	  left: 5px;
+	  pointer-events: none;
+	  transition: all 0.3s ease;
+	  font-size: 16px;
+	  font-family: Trebuchet MS;
+	  color: white;
+	  font-weight: 500;
+	  text-transform: uppercase;
+	}
+  
+	input, textarea {
+	  display: block;
+	  width: 280px;
+	  border: none;
+	  border-bottom: 1px solid #757575;
+	  left: 25px;
+	  padding: 5px;
+	  font-family: Trebuchet MS;
+	  background: none;
+	  color: #ccc;
+	}
+  
+	input {
+	  &:focus ~ label, &:valid ~ label {
+		top: -20px;
+		transition: all 0.3s ease;
+		font-size: 13px;
+	  }
+	}
+  
+	textarea {
+	  &:focus ~ label, &:valid ~ label {
+		top: -20px;
+		transition: all 0.3s ease;
+		font-size: 13px;
+	  }
+	}
+  
+	input:focus ~ .inputBar {
+	  &:before, &:after {
+		width: 50%;
+	  }
+	}
+  
+	textarea {
+	  &:focus ~ .inputBar {
+		&:before, &:after {
+		  width: 50%;
+		}
+	  }
+  
+	  height: 100px;
+	  width: 280px;
+	  overflow: auto;
+	  resize: none;
+	}
+  
+	.inputBar {
+	  position: relative;
+	  display: block;
+	  width: 290px;
+  
+	  &:before {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 0;
+		width: 0;
+		background: white;
+		height: 2px;
+		transition: all 0.2s ease;
+	  }
+  
+	  &:after {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 0;
+		width: 0;
+		background: white;
+		height: 2px;
+		transition: all 0.2s ease;
+		right: 50%;
+	  }
+  
+	  &:before {
+		left: 50%;
+	  }
+	}
+  }
+  
+  button {
+	&.enviar {
+	  background-color: white;
+	  border: none;
+	  padding: 15px 0;
+	  margin: 0;
+	  width: 290px;
+	  color: #3c3c3c;
+	  text-transform: uppercase;
+	  font-family: Trebuchet MS;
+	  font-size: 15px;
+	  border-radius: 5px;
+	  box-shadow: 0 6px #a1a1a1;
+	  position: relative;
+	  cursor: pointer;
+	}
+  
+	&:hover {
+	  box-shadow: 0 4px #a1a1a1;
+	  top: 2px;
+	}
+  
+	&:active {
+	  top: 6px;
+	  box-shadow: 0 0;
+	}
+}
+footer {
+	background-image: url("../img/Omi grupal.jpg");
+	background-size: 100%;
+	background-position: 30% 35%;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 40px 0 20px;
+  
+	ul.redes-sociales {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  padding: 0;
+	  margin: 0 0 30px 0;
+  
+	  li {
+		list-style: none;
+		padding: 10px;
+  
+		&::marker {
+		  content: none;
+		}
+  
+		a {
+		  background-color: antiquewhite;
+		  border-radius: 50%;
+		  height: 40px;
+		  position: relative;
+		  width: 40px;
+		  display: inline-block;
+		  transition: all 0.4s ease;
+  
+		  i {
+			color: black;
+			transform: translate(-50%, -50%);
+			position: absolute;
+			bottom: unset;
+			left: 50%;
+			top: 50%;
+		  }
+  
+		  &:hover {
+			background-color: rgba(250, 235, 215, 0.5);
+		  }
+		}
+	  }
+	}
+  
+	.copyright {
+	  font-family: 'Chelsea Market', cursive;
+	  font-size: 1rem;
+	  color: antiquewhite;
+	}
+}
+
